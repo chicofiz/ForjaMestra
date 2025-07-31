@@ -8,3 +8,4 @@ function addToCart(price) {
   document.getElementById('cart-count').textContent = cartCount;
   document.getElementById('cart-total').textContent = cartTotal.toFixed(2);
 }
+
