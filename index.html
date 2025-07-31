@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Loja Simples</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Minha Loja</h1>
+    <div id="cart">
+      🛒 Carrinho: <span id="cart-count">0</span> itens | Total: R$ <span id="cart-total">0.00</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="product" data-price="49.90">
+      <h2>Produto 1</h2>
+      <p>Descrição do produto.</p>
+      <p>Preço: R$ 49,90</p>
+      <button onclick="addToCart(49.90)">Adicionar ao carrinho</button>
+    </section>
+
+    <section class="product" data-price="79.90">
+      <h2>Produto 2</h2>
+      <p>Outro ótimo produto.</p>
+      <p>Preço: R$ 79,90</p>
+      <button onclick="addToCart(79.90)">Adicionar ao carrinho</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Minha Loja</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
