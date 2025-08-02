@@ -7,28 +7,63 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Minha Loja</h1>
-    <div id="cart">
-      🛒 Carrinho: <span id="cart-count">0</span> itens | Total: R$ <span id="cart-total">0.00</span>
-    </div>
-  </header>
 
-  <main>
-    <section class="product" data-price="49.90">
-      <h2>Produto 1</h2>
-      <p>Descrição do produto.</p>
-      <p>Preço: R$ 49,90</p>
-      <button onclick="addToCart(49.90)">Adicionar ao carrinho</button>
-    </section>
+<header class="hero-header">
+  <div class="header-image">
+    <img src="Img/fogo.gif" alt="Imagem do Header">
+  </div>
+  <div class="header-texto">
+  <img src="Img/logo.png" alt="Ícone da Forja" class="header-icone">
+  <h1>Bem-vindo à Forja Mestra</h1>
+  <p>O melhor lugar para equipar heróis com estilo e poder.</p>
+</div>
+</header>
 
-    <section class="product" data-price="79.90">
-      <h2>Produto 2</h2>
-      <p>Outro ótimo produto.</p>
-      <p>Preço: R$ 79,90</p>
-      <button onclick="addToCart(79.90)">Adicionar ao carrinho</button>
-    </section>
-  </main>
+<section class="secao-chamada">
+  <h2>Explore Nossos grupos de promoções</h2>
+  <p>Descrição do grupo</p>
+  <button class="botao-secundario" onclick="location.href='#produtos'">Grupo Whatsapp</button>
+</section>
+
+
+<div class="linha-titulo"></div>
+<h2 id="titulo-carrocel">Título do Carrossel</h2>
+
+<div class="carrossel-texto-container">
+  <div class="carrossel-lado">
+    <img src="Img/faca.jpeg" alt="Imagem 1" class="carrossel-img active">
+    <img src="Img/cutelo.jpeg" alt="Imagem 2" class="carrossel-img">
+    <img src="Img/canivete.jpeg" alt="Imagem 3" class="carrossel-img">
+  </div>
+  <div class="texto-fixo">
+    <h2>Título fixo ao lado</h2>
+    <p>Este texto permanece fixo enquanto as imagens do carrossel giram ao lado.</p>
+  </div>
+</div>
+
+<div class="carrossel-texto-container">
+  <div class="carrossel-lado">
+    <img src="Img/faca.jpeg" alt="Imagem 1" class="carrossel-img active">
+    <img src="Img/cutelo.jpeg" alt="Imagem 2" class="carrossel-img">
+    <img src="Img/canivete.jpeg" alt="Imagem 3" class="carrossel-img">
+  </div>
+  <div class="texto-fixo">
+    <h2>Título fixo ao lado</h2>
+    <p>Este texto permanece fixo enquanto as imagens do carrossel giram ao lado.</p>
+  </div>
+</div>
+
+<div class="carrossel-texto-container">
+  <div class="carrossel-lado">
+    <img src="Img/faca.jpeg" alt="Imagem 1" class="carrossel-img active">
+    <img src="Img/cutelo.jpeg" alt="Imagem 2" class="carrossel-img">
+    <img src="Img/canivete.jpeg" alt="Imagem 3" class="carrossel-img">
+  </div>
+  <div class="texto-fixo">
+    <h2>Título fixo ao lado</h2>
+    <p>Este texto permanece fixo enquanto as imagens do carrossel giram ao lado.</p>
+  </div>
+</div>
 
   <footer>
     <p>&copy; 2025 Minha Loja</p>

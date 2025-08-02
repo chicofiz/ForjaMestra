@@ -1,11 +1,13 @@
-let cartCount = 0;
-let cartTotal = 0;
+document.querySelectorAll('.carrossel-texto-container').forEach(container => {
+  const imagens = container.querySelectorAll('.carrossel-img');
+  let indice = 0;
 
-function addToCart(price) {
-  cartCount++;
-  cartTotal += price;
+  function trocarImagem() {
+    imagens.forEach(img => img.classList.remove('active'));
+    imagens[indice].classList.add('active');
+    indice = (indice + 1) % imagens.length;
+  }
 
-  document.getElementById('cart-count').textContent = cartCount;
-  document.getElementById('cart-total').textContent = cartTotal.toFixed(2);
-}
-
+  trocarImagem();
+  setInterval(trocarImagem, 4000);
+});
